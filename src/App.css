@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App header {
+  flex: 0;
+}
+
+.App main {
+  flex: 1 1 auto;
+}
+
+.App footer {
+  flex: 0;
+}

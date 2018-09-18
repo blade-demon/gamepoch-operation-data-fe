@@ -1,0 +1,31 @@
+{
+  "name": "gamepochdata",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.3.1",
+    "@material-ui/icons": "^1.1.0",
+    "axios": "^0.18.0",
+    "highcharts": "^6.1.1",
+    "highcharts-react-official": "^1.3.0",
+    "lodash": "^4.17.10",
+    "material-ui-datetime-range-picker": "^0.2.1",
+    "moment": "^2.22.2",
+    "moment-range": "^4.0.1",
+    "npm": "^6.4.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-highcharts": "^16.0.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-swipeable-views": "^0.12.14",
+    "types": "^0.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
