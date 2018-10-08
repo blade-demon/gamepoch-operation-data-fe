@@ -45,43 +45,43 @@ class Home extends Component {
         <div style={{}}>
           <MediaCard
             title="微信公众号"
-            subtitle="Gamepoch星游纪"
+            subtitle="每日早上8点更新"
             coverImage={WechatLogo}
             onClick={this.redirectToWechat}
           />
           <MediaCard
             title="微博"
-            subtitle="Gamepoch星游纪"
+            subtitle="每天10早上点更新"
             coverImage={WeiboLogo}
             onClick={this.redirectToWeibo}
           />
           <MediaCard
             title="抖音"
-            subtitle=""
+            subtitle="每天凌晨0点更新"
             coverImage={DouyinLogo}
             onClick={this.redirectToDouyin}
           />
           <MediaCard
             title="Gamepoch官网"
-            subtitle="https://www.gamepoch.com"
+            subtitle="每天凌晨0点更新"
             coverImage={GamepochLogo}
             onClick={this.redirectToGamepoch}
           />
           <MediaCard
             title="NBA2K19官网"
-            subtitle="https://nba2k19.gamepoch.com"
+            subtitle="每天凌晨0点更新"
             coverImage={NBA2K19Logo}
             onClick={this.redirectToNBA2K19}
           />
           <MediaCard
             title="NBA2K18官网"
-            subtitle="https://nba2k18.gamepoch.com"
+            subtitle="每天凌晨0点更新"
             coverImage={NBA2K18Logo}
             onClick={this.redirectToNBA2K18}
           />
           <MediaCard
             title="斯皮兰卡先生"
-            subtitle=""
+            subtitle="每周二早上8点更新"
             coverImage={SpelunkerLogo}
             onClick={this.redirectToSpelunker}
           />
