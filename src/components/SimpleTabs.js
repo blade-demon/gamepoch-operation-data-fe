@@ -27,14 +27,7 @@ const styles = theme => ({
 
 class SimpleTabs extends React.Component {
   state = {
-    value: 0,
-    imgSrc: [
-      "https://news-summary-ziweigamepoch.c9users.io/img/head.png",
-      "https://news-summary-ziweigamepoch.c9users.io/img/fans.png",
-      "https://news-summary-ziweigamepoch.c9users.io/img/blog.png",
-      "https://news-summary-ziweigamepoch.c9users.io/img/interact.png",
-      "https://news-summary-ziweigamepoch.c9users.io/img/article.png"
-    ]
+    value: 0
   };
 
   handleChange = (event, value) => {
@@ -58,7 +51,7 @@ class SimpleTabs extends React.Component {
             this.state.value === index && (
               <TabContainer>
                 <img
-                  src={this.state.imgSrc[index]}
+                  src={this.props.imgs[index]}
                   alt="微博数据"
                   style={{ width: "100%" }}
                 />
