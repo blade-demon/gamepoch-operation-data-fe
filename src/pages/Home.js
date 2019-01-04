@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Grid from "@material-ui/core/Grid";
 import MediaCard from "../components/MediaCard";
 import GamepochLogo from "../static/images/cards/gamepoch.jpg";
 import WechatLogo from "../static/images/cards/wechat.png";
@@ -20,55 +21,77 @@ class Home extends Component {
     return (
       <React.Fragment>
         <CustomAppBar title="Gamepoch星游纪运营数据" />
+        <Grid container spacing={8}>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
+            <MediaCard
+              title="微信公众号"
+              subtitle="每日早上8点更新"
+              coverImage={WechatLogo}
+              onClick={this.redirectToPage("wechat")}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
+            <MediaCard
+              title="微博"
+              subtitle="每天10早上点更新"
+              coverImage={WeiboLogo}
+              onClick={this.redirectToPage("weibo")}
+            />
+          </Grid>
 
-        <MediaCard
-          title="微信公众号"
-          subtitle="每日早上8点更新"
-          coverImage={WechatLogo}
-          onClick={this.redirectToPage("wechat")}
-        />
-        <MediaCard
-          title="微博"
-          subtitle="每天10早上点更新"
-          coverImage={WeiboLogo}
-          onClick={this.redirectToPage("weibo")}
-        />
-        <MediaCard
-          title="抖音"
-          subtitle="每天凌晨0点更新"
-          coverImage={DouyinLogo}
-          onClick={this.redirectToPage("douyin")}
-        />
-        <MediaCard
-          title="Gamepoch官网"
-          subtitle="每天凌晨0点更新"
-          coverImage={GamepochLogo}
-          onClick={this.redirectToPage("official_website")}
-        />
-        <MediaCard
-          title="NBA2K19官网"
-          subtitle="每天凌晨0点更新"
-          coverImage={NBA2K19Logo}
-          onClick={this.redirectToPage("nba2k19_website")}
-        />
-        <MediaCard
-          title="NBA2K18官网"
-          subtitle="每天凌晨0点更新"
-          coverImage={NBA2K18Logo}
-          onClick={this.redirectToPage("nba2k18_website")}
-        />
-        <MediaCard
-          title="斯皮兰卡先生"
-          subtitle="每周二早上8点更新"
-          coverImage={SpelunkerLogo}
-          onClick={this.redirectToPage("spelunker")}
-        />
-        <MediaCard
-          title="拳皇14人物兑换码"
-          subtitle=""
-          coverImage={KOF14Logo}
-          onClick={this.redirectToPage("kof14code")}
-        />
+          <Grid item xs={12} sm={6} md={4} lg={3}>
+            <MediaCard
+              title="抖音"
+              subtitle="每天凌晨0点更新"
+              coverImage={DouyinLogo}
+              onClick={this.redirectToPage("douyin")}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
+            <MediaCard
+              title="Gamepoch官网"
+              subtitle="每天凌晨0点更新"
+              coverImage={GamepochLogo}
+              onClick={this.redirectToPage("official_website")}
+            />
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4} lg={3}>
+            <MediaCard
+              title="NBA2K19官网"
+              subtitle="每天凌晨0点更新"
+              coverImage={NBA2K19Logo}
+              onClick={this.redirectToPage("nba2k19_website")}
+            />
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4} lg={3}>
+            <MediaCard
+              title="NBA2K18官网"
+              subtitle="每天凌晨0点更新"
+              coverImage={NBA2K18Logo}
+              onClick={this.redirectToPage("nba2k18_website")}
+            />
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4} lg={3}>
+            <MediaCard
+              title="斯皮兰卡先生"
+              subtitle="每周二早上8点更新"
+              coverImage={SpelunkerLogo}
+              onClick={this.redirectToPage("spelunker")}
+            />
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={3} lg={3}>
+            <MediaCard
+              title="拳皇14人物兑换码"
+              subtitle="可以查询人物兑换码"
+              coverImage={KOF14Logo}
+              onClick={this.redirectToPage("kof14code")}
+            />
+          </Grid>
+        </Grid>
       </React.Fragment>
     );
   }

@@ -7,6 +7,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 
 const styles = theme => ({
+  cardContainer: {},
   card: {
     display: "flex",
     margin: "2rem 1rem",
@@ -40,7 +41,7 @@ class MediaControlCard extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div onClick={this.props.onClick}>
+      <div className={classes.cardContainer} onClick={this.props.onClick}>
         <Card className={classes.card}>
           <CardMedia className={classes.cover} image={this.props.coverImage} />
           <div className={classes.details}>

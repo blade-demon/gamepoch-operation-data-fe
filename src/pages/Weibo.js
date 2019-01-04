@@ -11,7 +11,16 @@ export default class Weibo extends Component {
     return (
       <div>
         <CustomAppBar title="微博数据" />
-        <SimpleTabs tabItems={this.state.tabItems} />
+        <SimpleTabs
+          tabItems={this.state.tabItems}
+          imgs={[
+            "https://news-summary-ziweigamepoch.c9users.io/img/weibo/head.png",
+            "https://news-summary-ziweigamepoch.c9users.io/img/weibo/fans.png",
+            "https://news-summary-ziweigamepoch.c9users.io/img/weibo/blog.png",
+            "https://news-summary-ziweigamepoch.c9users.io/img/weibo/interact.png",
+            "https://news-summary-ziweigamepoch.c9users.io/img/weibo/article.png"
+          ]}
+        />
       </div>
     );
   }
