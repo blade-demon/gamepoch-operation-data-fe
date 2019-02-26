@@ -21,8 +21,8 @@ class Home extends Component {
     return (
       <React.Fragment>
         <CustomAppBar title="Gamepoch星游纪运营数据" />
-        <Grid container spacing={8}>
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Grid container>
+          <Grid item xs={12} sm={6} md={3} lg={3}>
             <MediaCard
               title="微信公众号"
               subtitle="每日早上8点更新"
@@ -30,7 +30,7 @@ class Home extends Component {
               onClick={this.redirectToPage("wechat")}
             />
           </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+          {/* <Grid item xs={12} sm={6} md={3} lg={3}>
             <MediaCard
               title="微博"
               subtitle="每天10早上点更新"
@@ -39,24 +39,24 @@ class Home extends Component {
             />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Grid item xs={12} sm={6} md={3} lg={3}>
             <MediaCard
               title="抖音"
               subtitle="每天凌晨0点更新"
               coverImage={DouyinLogo}
               onClick={this.redirectToPage("douyin")}
             />
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+          </Grid> */}
+          <Grid item xs={12} sm={6} md={3} lg={3}>
             <MediaCard
-              title="Gamepoch官网"
+              title="Gamepoch英文官网"
               subtitle="每天凌晨0点更新"
               coverImage={GamepochLogo}
               onClick={this.redirectToPage("official_website")}
             />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Grid item xs={12} sm={6} md={3} lg={3}>
             <MediaCard
               title="NBA2K19官网"
               subtitle="每天凌晨0点更新"
@@ -65,7 +65,7 @@ class Home extends Component {
             />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Grid item xs={12} sm={6} md={3} lg={3}>
             <MediaCard
               title="NBA2K18官网"
               subtitle="每天凌晨0点更新"
@@ -74,7 +74,7 @@ class Home extends Component {
             />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Grid item xs={12} sm={6} md={3} lg={3}>
             <MediaCard
               title="斯皮兰卡先生"
               subtitle="每周二早上8点更新"
